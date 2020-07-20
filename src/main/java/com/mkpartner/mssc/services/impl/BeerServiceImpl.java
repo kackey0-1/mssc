@@ -26,6 +26,6 @@ public class BeerServiceImpl implements BeerService {
 
     @Override
     public void updateBeer(UUID beerId, BeerDto beerDto) {
-        //TODO code real implementation
+        //TODO code real impl to update beer
     }
 }
