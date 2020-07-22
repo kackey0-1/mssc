@@ -1,5 +1,6 @@
 package com.mkpartner.mssc.web.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mkpartner.mssc.services.BeerService;
 import com.mkpartner.mssc.web.model.BeerDto;
@@ -15,6 +16,8 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.UUID;
 
+import static org.mockito.ArgumentMatchers.anyBoolean;
+import static org.mockito.Mockito.mock;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.result.JsonPathResultMatchers.*;
@@ -57,11 +60,30 @@ class BeerControllerTest {
     }
 
     @Test
-    void handlePost() {
+    void handlePost() throws Exception {
+        //given
+        BeerDto beerDto = validBeer;
+        beerDto.setId(null);
+        BeerDto savedDto = BeerDto.builder().id(UUID.randomUUID()).beerName("New Beer").build();
+        String beerDtoJson = objectMapper.writeValueAsString(beerDto);
+        given(beerService.saveNewBeer(any())).willReturn(savedDto);
+
+        mockMvc.perform(post("/api/v1/beer/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(beerDtoJson))
+                .andExpect(status().isCreated());
     }
 
     @Test
-    void handleUpdate() {
+    void handleUpdate() throws Exception {
         //given
+        BeerDto beerDto = validBeer;
+        String beerDtoJson = objectMapper.writeValueAsString(beerDto);
+
+        //when
+        mockMvc.perform(put("/api/v1/beer/" + validBeer.getId().toString())
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(beerDtoJson))
+                .andExpect(status().isNoContent());
     }
 }
