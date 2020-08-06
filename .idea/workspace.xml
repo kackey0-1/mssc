@@ -14,12 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/BreweryClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/MsscApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/MsscApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +28,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -80,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mkpartner.mssc.web.client" />
       <recent name="com.mkpartner.mssc.web.controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -92,7 +92,7 @@
       <recent name="com.mkpartner.mssc.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerControllerTest">
+  <component name="RunManager" selected="JUnit.BreweryClientTest.getBeerById">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -153,17 +153,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsscApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BreweryClientTest.getBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.BreweryClientTest" />
+      <option name="METHOD_NAME" value="getBeerById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BreweryClientTest.getBeerById" />
+        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BeerControllerTest" />
         <item itemvalue="JUnit.BeerControllerTest.saveNewBeer" />
         <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
-        <item itemvalue="JUnit.MsscApplicationTests" />
-        <item itemvalue="Application.MsscApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596718664416</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding beer controller test. closes #3">
+      <created>1596751883215</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596751883215</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,9 +282,14 @@
     <MESSAGE value="added version up code" />
     <MESSAGE value="added README.md" />
     <MESSAGE value="adding web data model. closes #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding web data model. closes #1" />
+    <MESSAGE value="adding beer controller test. closes #3" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding beer controller test. closes #3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596752253862">
+      <screen x="0" y="0" width="1920" height="1031" />
+    </state>
+    <state x="589" y="199" width="742" height="640" key="#Inspections/0.0.1920.1031@0.0.1920.1031" timestamp="1596752253862" />
     <state x="555" y="179" width="810" height="848" key="#Intentions" timestamp="1594860241214">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -305,22 +318,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596751351032">
+    <state width="936" height="270" key="GridCell.Tab.0.bottom" timestamp="1596751897239">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596751351032" />
-    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596751351032">
+    <state width="936" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
+    <state width="936" height="270" key="GridCell.Tab.0.center" timestamp="1596751897239">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596751351032" />
-    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596751351032">
+    <state width="936" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
+    <state width="936" height="270" key="GridCell.Tab.0.left" timestamp="1596751897239">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596751351032" />
-    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596751351032">
+    <state width="936" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
+    <state width="936" height="270" key="GridCell.Tab.0.right" timestamp="1596751897239">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596751351032" />
+    <state width="936" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -361,14 +374,14 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="198" y="153" width="1235" height="733" key="SettingsEditor/0.0.1920.1031@0.0.1920.1031" timestamp="1596714649241" />
-    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596715891026">
+    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596751890208">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2/0.0.1920.1031@0.0.1920.1031" timestamp="1596715891026" />
-    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596750953445">
+    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2/0.0.1920.1031@0.0.1920.1031" timestamp="1596751890208" />
+    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596753022750">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596750953445" />
+    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596753022750" />
     <state x="623" y="228" key="search.everywhere.popup" timestamp="1594769656122">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
