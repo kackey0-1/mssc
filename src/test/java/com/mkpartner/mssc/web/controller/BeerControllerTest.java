@@ -1,9 +1,9 @@
 package com.mkpartner.mssc.web.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mkpartner.mssc.services.BeerService;
 import com.mkpartner.mssc.web.model.BeerDto;
+import com.mkpartner.mssc.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -16,8 +16,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.UUID;
 
-import static org.mockito.ArgumentMatchers.anyBoolean;
-import static org.mockito.Mockito.mock;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.result.JsonPathResultMatchers.*;
@@ -43,7 +41,7 @@ class BeerControllerTest {
     public void setUp(){
         validBeer = BeerDto.builder().id(UUID.randomUUID())
                             .beerName("Beer1")
-                            .beerStyle("PALE_ALE")
+                            .beerStyle(BeerStyleEnum.PALE_ALE)
                             .upc(123456789012l)
                             .build();
     }
