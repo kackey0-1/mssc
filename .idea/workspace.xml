@@ -14,11 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/BreweryClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/CustomerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerPagedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/services/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/BreweryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/BreweryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +33,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,10 +94,11 @@
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mkpartner.mssc.web.services" />
       <recent name="com.mkpartner.mssc.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BreweryClientTest.getBeerById">
+  <component name="RunManager" selected="Application.MsscApplication">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -121,34 +127,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeerControllerTest.getBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BreweryClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
-      <option name="METHOD_NAME" value="getBeerById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeerControllerTest.saveNewBeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mssc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
-      <option name="METHOD_NAME" value="saveNewBeer" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.BreweryClientTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,6 +158,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BreweryClientTest.testUpdateBeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.BreweryClientTest" />
+      <option name="METHOD_NAME" value="testUpdateBeer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MsscApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mssc" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkpartner.mssc.MsscApplication" />
@@ -178,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BreweryClientTest.getBeerById" />
         <item itemvalue="Application.MsscApplication" />
+        <item itemvalue="JUnit.BreweryClientTest" />
+        <item itemvalue="JUnit.BreweryClientTest.testUpdateBeer" />
+        <item itemvalue="JUnit.BreweryClientTest.getBeerById" />
         <item itemvalue="JUnit.BeerControllerTest" />
-        <item itemvalue="JUnit.BeerControllerTest.saveNewBeer" />
-        <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596751883215</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added beer client">
+      <created>1596753329261</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596753329261</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +295,8 @@
     <MESSAGE value="added README.md" />
     <MESSAGE value="adding web data model. closes #1" />
     <MESSAGE value="adding beer controller test. closes #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding beer controller test. closes #3" />
+    <MESSAGE value="added beer client" />
+    <option name="LAST_COMMIT_MESSAGE" value="added beer client" />
   </component>
   <component name="WindowStateProjectService">
     <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596752253862">
@@ -306,10 +319,10 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="418" y="176" width="1106" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596589525099" />
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596718391408">
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596840910981">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596718391408" />
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596840910981" />
     <state x="693" y="266" width="534" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596718098425">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -318,22 +331,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="936" height="270" key="GridCell.Tab.0.bottom" timestamp="1596751897239">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596841087017">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
-    <state width="936" height="270" key="GridCell.Tab.0.center" timestamp="1596751897239">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087017" />
+    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596841087016">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
-    <state width="936" height="270" key="GridCell.Tab.0.left" timestamp="1596751897239">
+    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087016" />
+    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596841087016">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
-    <state width="936" height="270" key="GridCell.Tab.0.right" timestamp="1596751897239">
+    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087016" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596841087017">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087017" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>

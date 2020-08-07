@@ -2,7 +2,6 @@ package com.mkpartner.mssc.web.controller;
 
 import com.mkpartner.mssc.services.BeerService;
 import com.mkpartner.mssc.web.model.BeerDto;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +29,7 @@ public class BeerController {
     public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto){
         BeerDto savedDto = beerService.saveNewBeer(beerDto);
         HttpHeaders headers = new HttpHeaders();
-
+        headers.add("Location", "/api/v1/beer/" + UUID.randomUUID());
         return new ResponseEntity(headers, HttpStatus.CREATED);
     }
 
