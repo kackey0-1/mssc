@@ -14,16 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/CustomerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerPagedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/services/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/CustomerClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/BreweryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/BreweryClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/CustomerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/CustomerClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +27,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -87,18 +80,18 @@
       <recent name="com.mkpartner.mssc.web.client" />
       <recent name="com.mkpartner.mssc.web.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mkpartner.mssc.web.services" />
       <recent name="com.mkpartner.mssc.services" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MsscApplication">
+  <component name="RunManager" selected="JUnit.CustomerClientTest">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -108,21 +101,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mssc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,6 +152,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomerClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.CustomerClientTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MsscApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mssc" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkpartner.mssc.MsscApplication" />
@@ -183,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerClientTest" />
         <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BreweryClientTest" />
         <item itemvalue="JUnit.BreweryClientTest.testUpdateBeer" />
         <item itemvalue="JUnit.BreweryClientTest.getBeerById" />
-        <item itemvalue="JUnit.BeerControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596753329261</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding customer module">
+      <created>1596841872208</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596841872208</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +296,8 @@
     <MESSAGE value="adding web data model. closes #1" />
     <MESSAGE value="adding beer controller test. closes #3" />
     <MESSAGE value="added beer client" />
-    <option name="LAST_COMMIT_MESSAGE" value="added beer client" />
+    <MESSAGE value="adding customer module" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding customer module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596752253862">
@@ -319,10 +320,10 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="418" y="176" width="1106" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596589525099" />
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596840910981">
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596923504706">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596840910981" />
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596923504706" />
     <state x="693" y="266" width="534" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596718098425">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -331,22 +332,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596841087017">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596841991549">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087017" />
-    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596841087016">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991549" />
+    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596841991548">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087016" />
-    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596841087016">
+    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991548" />
+    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596841991548">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087016" />
-    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596841087017">
+    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991548" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596841991549">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596841087017" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991549" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -391,10 +392,10 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2/0.0.1920.1031@0.0.1920.1031" timestamp="1596751890208" />
-    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596753022750">
+    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596923899355">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596753022750" />
+    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596923899355" />
     <state x="623" y="228" key="search.everywhere.popup" timestamp="1594769656122">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
