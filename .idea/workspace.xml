@@ -14,9 +14,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/CustomerClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/BlockingRestTemplateCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/NIORestTemplateCustomizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/CustomerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/CustomerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +32,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -84,6 +89,9 @@
       <recent name="com.mkpartner.mssc.web.services" />
       <recent name="com.mkpartner.mssc.services" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mkpartner.mssc.web" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -120,22 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreweryClientTest.getBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mssc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.BreweryClientTest" />
-      <option name="METHOD_NAME" value="getBeerById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BreweryClientTest.testUpdateBeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
@@ -167,6 +159,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MsscApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mkpartner.mssc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MsscApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mssc" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mkpartner.mssc.MsscApplication" />
@@ -177,10 +184,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomerClientTest" />
-        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BreweryClientTest" />
+        <item itemvalue="JUnit.MsscApplicationTests" />
+        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BreweryClientTest.testUpdateBeer" />
-        <item itemvalue="JUnit.BreweryClientTest.getBeerById" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596841872208</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding customer service">
+      <created>1596924377525</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596924377526</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixing typo">
+      <created>1596924491761</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596924491761</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,13 +318,15 @@
     <MESSAGE value="adding beer controller test. closes #3" />
     <MESSAGE value="added beer client" />
     <MESSAGE value="adding customer module" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding customer module" />
+    <MESSAGE value="adding customer service" />
+    <MESSAGE value="fixing typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing typo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596752253862">
+    <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596925300701">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="589" y="199" width="742" height="640" key="#Inspections/0.0.1920.1031@0.0.1920.1031" timestamp="1596752253862" />
+    <state x="589" y="199" width="742" height="640" key="#Inspections/0.0.1920.1031@0.0.1920.1031" timestamp="1596925300701" />
     <state x="555" y="179" width="810" height="848" key="#Intentions" timestamp="1594860241214">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -320,10 +343,18 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="418" y="176" width="1106" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596589525099" />
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596923504706">
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596925668839">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596923504706" />
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596925668839" />
+    <state x="463" y="439" width="993" height="160" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596926327976">
+      <screen x="0" y="0" width="1920" height="1031" />
+    </state>
+    <state x="463" y="439" width="993" height="160" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596926327976" />
+    <state x="687" y="396" width="546" height="246" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1596926329410">
+      <screen x="0" y="0" width="1920" height="1031" />
+    </state>
+    <state x="687" y="396" width="546" height="246" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1031@0.0.1920.1031" timestamp="1596926329410" />
     <state x="693" y="266" width="534" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596718098425">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -332,22 +363,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596841991549">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596924504718">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991549" />
-    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596841991548">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
+    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596924504718">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991548" />
-    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596841991548">
+    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
+    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596924504718">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991548" />
-    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596841991549">
+    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596924504718">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596841991549" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -388,10 +419,10 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="198" y="153" width="1235" height="733" key="SettingsEditor/0.0.1920.1031@0.0.1920.1031" timestamp="1596714649241" />
-    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596751890208">
+    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596924501888">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2/0.0.1920.1031@0.0.1920.1031" timestamp="1596751890208" />
+    <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2/0.0.1920.1031@0.0.1920.1031" timestamp="1596924501888" />
     <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596923899355">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>

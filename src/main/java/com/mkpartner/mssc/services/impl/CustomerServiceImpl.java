@@ -1,7 +1,7 @@
 package com.mkpartner.mssc.services.impl;
 
 import com.mkpartner.mssc.web.model.CustomerDto;
-import com.mkpartner.mssc.web.services.CustomerService;
+import com.mkpartner.mssc.services.CustomerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

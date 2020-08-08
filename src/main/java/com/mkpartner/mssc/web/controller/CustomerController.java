@@ -1,8 +1,7 @@
 package com.mkpartner.mssc.web.controller;
 
-import com.mkpartner.mssc.web.model.BeerDto;
 import com.mkpartner.mssc.web.model.CustomerDto;
-import com.mkpartner.mssc.web.services.CustomerService;
+import com.mkpartner.mssc.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -10,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
-import java.util.concurrent.Callable;
 
 @RequestMapping("/api/v1/customer")
 @RestController

@@ -1,4 +1,4 @@
-package com.mkpartner.mssc.web.services;
+package com.mkpartner.mssc.services;
 
 import com.mkpartner.mssc.web.model.BeerDto;
 import com.mkpartner.mssc.web.model.CustomerDto;
