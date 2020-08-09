@@ -14,14 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/BlockingRestTemplateCustomizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/NIORestTemplateCustomizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/BlockingRestTemplateCustomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/BlockingRestTemplateCustomizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,9 +179,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomerClientTest" />
+        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BreweryClientTest" />
         <item itemvalue="JUnit.MsscApplicationTests" />
-        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BreweryClientTest.testUpdateBeer" />
       </list>
     </recent_temporary>
@@ -290,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596924491761</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="adding http client customizer">
+      <created>1596928454184</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596928454184</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +322,8 @@
     <MESSAGE value="adding customer module" />
     <MESSAGE value="adding customer service" />
     <MESSAGE value="fixing typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing typo" />
+    <MESSAGE value="adding http client customizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding http client customizer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596925300701">
@@ -363,22 +366,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596924504718">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596928458976">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
-    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596924504718">
+    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458976" />
+    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596928458976">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
-    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596924504718">
+    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458976" />
+    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596928458975">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
-    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596924504718">
+    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458975" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596928458976">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596924504718" />
+    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458976" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
