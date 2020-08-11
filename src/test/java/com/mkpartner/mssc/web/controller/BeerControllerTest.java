@@ -7,21 +7,16 @@ import com.mkpartner.mssc.web.model.BeerDto;
 import com.mkpartner.mssc.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.UUID;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.result.JsonPathResultMatchers.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.BDDMockito.given;
 
 @WebMvcTest(BeerController.class)
 class BeerControllerTest {
@@ -40,8 +35,8 @@ class BeerControllerTest {
     @BeforeEach
     public void setUp(){
         validBeer = BeerDto.builder()
-                            .beerName("Beer1")
-                            .beerStyle(BeerStyleEnum.PALE_ALE)
+                            .beerName("New Beer")
+                            .beerStyle("IPA")
                             .upc(123456789012l)
                             .build();
     }

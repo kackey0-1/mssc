@@ -15,7 +15,7 @@ public class BeerServiceImpl implements BeerService {
     public BeerDto getBeerById(UUID beerId) {
         return BeerDto.builder().id(UUID.randomUUID())
                                 .beerName("Galaxy Cat")
-                                .beerStyle(BeerStyleEnum.ALE)
+                                .beerStyle("ALE")
                                 .upc(100l)
                                 .build();
     }
