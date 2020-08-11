@@ -1,27 +1,22 @@
 package com.mkpartner.mssc.web.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mkpartner.mssc.services.BeerService;
 import com.mkpartner.mssc.web.model.BeerDto;
 import com.mkpartner.mssc.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.result.JsonPathResultMatchers.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.BDDMockito.given;
 
 @WebMvcTest(BeerController.class)
 class BeerControllerTest {
@@ -39,10 +34,12 @@ class BeerControllerTest {
 
     @BeforeEach
     public void setUp(){
-        validBeer = BeerDto.builder().id(UUID.randomUUID())
-                            .beerName("Beer1")
+        validBeer = BeerDto.builder()
+                            .beerName("Beer")
                             .beerStyle(BeerStyleEnum.PALE_ALE)
-                            .upc(123456789012l)
+                            .upc(12345678912l)
+                            .price(new BigDecimal("12"))
+                            .quantityOnHand(20)
                             .build();
     }
 
@@ -54,7 +51,7 @@ class BeerControllerTest {
 
     @Test
     void saveNewBeer() throws Exception {
-        BeerDto beerDto = BeerDto.builder().build();
+        BeerDto beerDto = validBeer;
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
         mockMvc.perform(post("/api/v1/beer/")
@@ -65,7 +62,7 @@ class BeerControllerTest {
 
     @Test
     void updateBeerById() throws Exception{
-        BeerDto beerDto = BeerDto.builder().build();
+        BeerDto beerDto = validBeer;
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
         mockMvc.perform(put("/api/v1/beer/" + UUID.randomUUID().toString())

@@ -14,11 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/client/BreweryClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/MvcExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +31,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,17 +83,17 @@
       <recent name="com.mkpartner.mssc.web.client" />
       <recent name="com.mkpartner.mssc.web.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mkpartner.mssc.services" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mkpartner.mssc.services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BreweryClientTest.getBeerById">
+  <component name="RunManager" selected="JUnit.BeerControllerTest">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -121,22 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeerControllerTest.getBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mssc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
-      <option name="METHOD_NAME" value="getBeerById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BeerControllerTest.saveNewBeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
@@ -148,6 +133,22 @@
       <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
       <option name="METHOD_NAME" value="saveNewBeer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerControllerTest.updateBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
+      <option name="METHOD_NAME" value="updateBeerById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BreweryClientTest.getBeerById" />
-        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BeerControllerTest" />
+        <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
         <item itemvalue="JUnit.BeerControllerTest.saveNewBeer" />
-        <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
+        <item itemvalue="Application.MsscApplication" />
+        <item itemvalue="JUnit.BreweryClientTest.getBeerById" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596751883215</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding beerdto bean validation. closes #12">
+      <created>1597182578675</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597182578675</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +291,8 @@
     <MESSAGE value="added README.md" />
     <MESSAGE value="adding web data model. closes #1" />
     <MESSAGE value="adding beer controller test. closes #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding beer controller test. closes #3" />
+    <MESSAGE value="adding beerdto bean validation. closes #12" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding beerdto bean validation. closes #12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596752253862">
@@ -318,38 +327,38 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="936" height="270" key="GridCell.Tab.0.bottom" timestamp="1596751897239">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom" timestamp="1597184348840">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
-    <state width="936" height="270" key="GridCell.Tab.0.center" timestamp="1596751897239">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597184348840" />
+    <state width="1872" height="341" key="GridCell.Tab.0.center" timestamp="1597184348840">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
-    <state width="936" height="270" key="GridCell.Tab.0.left" timestamp="1596751897239">
+    <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597184348840" />
+    <state width="1872" height="341" key="GridCell.Tab.0.left" timestamp="1597184348840">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
-    <state width="936" height="270" key="GridCell.Tab.0.right" timestamp="1596751897239">
+    <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597184348840" />
+    <state width="1872" height="341" key="GridCell.Tab.0.right" timestamp="1597184348840">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="936" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596751897239" />
-    <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
+    <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597184348840" />
+    <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1597184215284">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1595378669696" />
-    <state width="1872" height="334" key="GridCell.Tab.1.center" timestamp="1595378669696">
+    <state width="1872" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597184215284" />
+    <state width="1872" height="334" key="GridCell.Tab.1.center" timestamp="1597184215284">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="334" key="GridCell.Tab.1.center/0.0.1920.1031@0.0.1920.1031" timestamp="1595378669696" />
-    <state width="1872" height="334" key="GridCell.Tab.1.left" timestamp="1595378669696">
+    <state width="1872" height="334" key="GridCell.Tab.1.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597184215284" />
+    <state width="1872" height="334" key="GridCell.Tab.1.left" timestamp="1597184215284">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="334" key="GridCell.Tab.1.left/0.0.1920.1031@0.0.1920.1031" timestamp="1595378669696" />
-    <state width="1872" height="334" key="GridCell.Tab.1.right" timestamp="1595378669696">
+    <state width="1872" height="334" key="GridCell.Tab.1.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597184215284" />
+    <state width="1872" height="334" key="GridCell.Tab.1.right" timestamp="1597184215284">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="334" key="GridCell.Tab.1.right/0.0.1920.1031@0.0.1920.1031" timestamp="1595378669696" />
+    <state width="1872" height="334" key="GridCell.Tab.1.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597184215284" />
     <state width="1872" height="334" key="GridCell.Tab.2.bottom" timestamp="1594947550192">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -386,5 +395,17 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="623" y="228" key="search.everywhere.popup/0.0.1920.1031@0.0.1920.1031" timestamp="1594769656122" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="sendTree" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
