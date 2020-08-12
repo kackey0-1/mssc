@@ -17,7 +17,7 @@ class BreweryClientTest {
 
     @Autowired
     BreweryClient client;
-
+/*
     @Test
     void getBeerById() {
         BeerDto dto = client.getBeerById(UUID.randomUUID());
@@ -48,4 +48,6 @@ class BreweryClientTest {
     void testDeleteBeer() {
         client.deleteBeer(UUID.randomUUID());
     }
+
+ */
 }

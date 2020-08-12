@@ -14,9 +14,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/domain/Beer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/mappers/BeerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/mappers/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/mappers/DateMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/BlockingRestTemplateCustomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/config/BlockingRestTemplateCustomizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/CustomerClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/CustomerClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +38,7 @@
       <list>
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -73,16 +84,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.mkpartner.mssc.web.client" />
       <recent name="com.mkpartner.mssc.web.controller" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mkpartner.mssc.web.services" />
-      <recent name="com.mkpartner.mssc.services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mkpartner.mssc.web" />
@@ -90,11 +100,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mkpartner.mssc.web.services" />
+      <recent name="com.mkpartner.mssc.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerClientTest">
+  <component name="RunManager" selected="JUnit.BeerControllerTest.updateBeerById">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -104,6 +115,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerControllerTest.updateBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
+      <option name="METHOD_NAME" value="updateBeerById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,22 +146,6 @@
       <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.BreweryClientTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BreweryClientTest.testUpdateBeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mssc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.BreweryClientTest" />
-      <option name="METHOD_NAME" value="testUpdateBeer" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
         <item itemvalue="JUnit.CustomerClientTest" />
         <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BreweryClientTest" />
         <item itemvalue="JUnit.MsscApplicationTests" />
-        <item itemvalue="JUnit.BreweryClientTest.testUpdateBeer" />
       </list>
     </recent_temporary>
   </component>
@@ -366,22 +377,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom" timestamp="1596928458976">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom" timestamp="1597271779186">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458976" />
-    <state width="1872" height="270" key="GridCell.Tab.0.center" timestamp="1596928458976">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
+    <state width="1872" height="341" key="GridCell.Tab.0.center" timestamp="1597271779186">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458976" />
-    <state width="1872" height="270" key="GridCell.Tab.0.left" timestamp="1596928458975">
+    <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
+    <state width="1872" height="341" key="GridCell.Tab.0.left" timestamp="1597271779186">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458975" />
-    <state width="1872" height="270" key="GridCell.Tab.0.right" timestamp="1596928458976">
+    <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
+    <state width="1872" height="341" key="GridCell.Tab.0.right" timestamp="1597271779186">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="270" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1596928458976" />
+    <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -418,10 +429,10 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="493" y="176" width="934" height="687" key="Maven.ArtifactSearchDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596718373237" />
-    <state x="198" y="153" width="1235" height="733" key="SettingsEditor" timestamp="1596714649241">
+    <state x="198" y="153" width="1235" height="733" key="SettingsEditor" timestamp="1597272252664">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="198" y="153" width="1235" height="733" key="SettingsEditor/0.0.1920.1031@0.0.1920.1031" timestamp="1596714649241" />
+    <state x="198" y="153" width="1235" height="733" key="SettingsEditor/0.0.1920.1031@0.0.1920.1031" timestamp="1597272252664" />
     <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596924501888">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -434,5 +445,12 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="623" y="228" key="search.everywhere.popup/0.0.1920.1031@0.0.1920.1031" timestamp="1594769656122" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

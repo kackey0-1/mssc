@@ -16,7 +16,7 @@ class CustomerClientTest {
 
     @Autowired
     CustomerClient customerClient;
-
+/*
     @Test
     void testGetBeerById() {
         CustomerDto customerDto = customerClient.getBeerById(UUID.randomUUID());
@@ -40,5 +40,5 @@ class CustomerClientTest {
     void testDeleteCustomerById() {
         customerClient.deleteCustomerById(UUID.randomUUID());
     }
-
+ */
 }

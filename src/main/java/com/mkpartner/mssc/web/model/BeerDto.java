@@ -36,4 +36,6 @@ public class BeerDto {
     private BigDecimal price;
     private Integer quantityOnHand;
      */
+    private OffsetDateTime createdDate;
+    private OffsetDateTime lastUpdatedDate;
 }
