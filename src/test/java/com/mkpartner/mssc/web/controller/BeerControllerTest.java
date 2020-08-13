@@ -1,6 +1,7 @@
 package com.mkpartner.mssc.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mkpartner.mssc.domain.Beer;
 import com.mkpartner.mssc.services.BeerService;
 import com.mkpartner.mssc.web.model.BeerDto;
 import com.mkpartner.mssc.web.model.BeerStyleEnum;
@@ -34,13 +35,6 @@ class BeerControllerTest {
 
     @BeforeEach
     public void setUp(){
-        validBeer = BeerDto.builder()
-                            .beerName("Beer")
-                            .beerStyle(BeerStyleEnum.PALE_ALE)
-                            .upc(12345678912l)
-                            .price(new BigDecimal("12"))
-                            .quantityOnHand(20)
-                            .build();
     }
 
     @Test
@@ -51,7 +45,7 @@ class BeerControllerTest {
 
     @Test
     void saveNewBeer() throws Exception {
-        BeerDto beerDto = validBeer;
+        BeerDto beerDto = getValidBeerDto();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
         mockMvc.perform(post("/api/v1/beer/")
@@ -62,7 +56,7 @@ class BeerControllerTest {
 
     @Test
     void updateBeerById() throws Exception{
-        BeerDto beerDto = validBeer;
+        BeerDto beerDto = getValidBeerDto();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
         mockMvc.perform(put("/api/v1/beer/" + UUID.randomUUID().toString())
@@ -73,5 +67,15 @@ class BeerControllerTest {
 
     @Test
     void deleteBeerById() {
+    }
+
+    BeerDto getValidBeerDto(){
+        return BeerDto.builder()
+                .beerName("Beer")
+                .beerStyle(BeerStyleEnum.PALE_ALE)
+                .upc(12345678912l)
+                .price(new BigDecimal("12"))
+                .quantityOnHand(20)
+                .build();
     }
 }
