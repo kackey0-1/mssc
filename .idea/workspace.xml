@@ -14,14 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/asciidoc/index.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/bootstrap/BeerLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/bootstrap/BeerLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +74,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -96,7 +91,7 @@
       <recent name="com.mkpartner.mssc.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerControllerTest.saveNewBeer">
+  <component name="RunManager" selected="JUnit.BeerControllerTest">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -182,9 +177,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BeerControllerTest.saveNewBeer" />
-        <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
         <item itemvalue="JUnit.BeerControllerTest" />
+        <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
+        <item itemvalue="JUnit.BeerControllerTest.saveNewBeer" />
         <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
         <item itemvalue="Application.MsscApplication" />
       </list>
@@ -381,22 +376,26 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="341" key="GridCell.Tab.0.bottom" timestamp="1597446201017">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom" timestamp="1597580700243">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1872" height="341" key="GridCell.Tab.0.center" timestamp="1597446201017">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597580700243" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center" timestamp="1597580700243">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1872" height="341" key="GridCell.Tab.0.left" timestamp="1597446201016">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1597580700243" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left" timestamp="1597580700242">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201016" />
-    <state width="1872" height="341" key="GridCell.Tab.0.right" timestamp="1597446201017">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1597580700242" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right" timestamp="1597580700243">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1597580700243" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1597355766234">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -441,10 +440,11 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="774" y="179" width="372" height="681" key="RollbackChangesDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1597355753523" />
-    <state x="198" y="153" width="1235" height="733" key="SettingsEditor" timestamp="1596714649241">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state x="149" y="124" width="927" height="722" key="SettingsEditor" timestamp="1597580696358">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="198" y="153" width="1235" height="733" key="SettingsEditor/0.0.1920.1031@0.0.1920.1031" timestamp="1596714649241" />
+    <state x="149" y="124" width="927" height="722" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1597580696358" />
     <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596751890208">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>

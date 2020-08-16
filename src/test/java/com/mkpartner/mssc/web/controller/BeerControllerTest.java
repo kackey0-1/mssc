@@ -28,6 +28,7 @@ import static org.mockito.BDDMockito.given;
 //import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
+import static org.springframework.restdocs.payload.PayloadDocumentation.*;
 import static org.springframework.restdocs.request.RequestDocumentation.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -42,7 +43,6 @@ class BeerControllerTest {
 
     @Autowired
     ObjectMapper objectMapper;
-
 
     @MockBean
     BeerRepository beerRepository;
@@ -64,6 +64,17 @@ class BeerControllerTest {
                 ),
                         requestParameters(
                                 parameterWithName("isCold").description("Is Beer Cold Query params")
+                        ),
+                        responseFields(
+                                fieldWithPath("id").description("Id of Beer"),
+                                fieldWithPath("version").description("Version number"),
+                                fieldWithPath("createdDate").description("Date Created"),
+                                fieldWithPath("lastModifiedDate").description("Date Updated"),
+                                fieldWithPath("beerName").description("Beer Name"),
+                                fieldWithPath("beerStyle").description("Beer Style"),
+                                fieldWithPath("upc").description("UPC of Beer"),
+                                fieldWithPath("price").description("Price of Beer"),
+                                fieldWithPath("quantityOnHand").description("Quantity On Hand")
                         )));
     }
 
@@ -76,8 +87,17 @@ class BeerControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(beerDtoJson))
                 .andExpect(status().isCreated())
-                .andDo(document("v1/beer", requestParameters(
-                        parameterWithName("beerDto").description("Entity of Beer to save.")
+                .andDo(document("v1/beer",
+                        requestFields(
+                            fieldWithPath("id").ignored(),
+                            fieldWithPath("version").ignored(),
+                            fieldWithPath("createdDate").ignored(),
+                            fieldWithPath("lastModifiedDate").ignored(),
+                            fieldWithPath("beerName").description("Beer Name"),
+                            fieldWithPath("beerStyle").description("Beer Style"),
+                            fieldWithPath("upc").description("UPC of Beer"),
+                            fieldWithPath("price").description("Price of Beer"),
+                            fieldWithPath("quantityOnHand").description("Quantity On Hand")
                 )));
     }
 
@@ -90,9 +110,20 @@ class BeerControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(beerDtoJson))
                 .andExpect(status().isNoContent())
-                .andDo(document("v1/beer", pathParameters(
-                        parameterWithName("beerDto").description("Entity of Beer to save."),
-                        parameterWithName("beerId").description("UUID of desired beer to get.")
+                .andDo(document("v1/beer",
+                        pathParameters(
+                            parameterWithName("beerId").description("UUID of desired beer to get.")
+                        ),
+                        requestFields(
+                                fieldWithPath("id").ignored(),
+                                fieldWithPath("version").ignored(),
+                                fieldWithPath("createdDate").ignored(),
+                                fieldWithPath("lastModifiedDate").ignored(),
+                                fieldWithPath("beerName").description("Beer Name"),
+                                fieldWithPath("beerStyle").description("Beer Style"),
+                                fieldWithPath("upc").description("UPC of Beer"),
+                                fieldWithPath("price").description("Price of Beer"),
+                                fieldWithPath("quantityOnHand").description("Quantity On Hand")
                 )));
     }
 
