@@ -32,10 +32,12 @@ public class BeerDto {
     private String beerStyle;
     @Positive
     private Long upc;
-    /*
+    @Positive
     private BigDecimal price;
+
+    /*
     private Integer quantityOnHand;
      */
     private OffsetDateTime createdDate;
-    private OffsetDateTime lastUpdatedDate;
+    private OffsetDateTime lastModifiedDate;
 }

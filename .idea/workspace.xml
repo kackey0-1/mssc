@@ -14,19 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/domain/Beer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/mappers/BeerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/mappers/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/mappers/DateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoKebabTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoSnakeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-kebab.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-snake.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/BreweryClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/CustomerClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/client/CustomerClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="package-info" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -88,11 +84,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mkpartner.mssc.web.model" />
       <recent name="com.mkpartner.mssc.web.client" />
       <recent name="com.mkpartner.mssc.web.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mkpartner.mssc.web.services" />
+      <recent name="com.mkpartner.mssc.services" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mkpartner.mssc.web" />
@@ -100,25 +98,11 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mkpartner.mssc.web.services" />
-      <recent name="com.mkpartner.mssc.services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerControllerTest.updateBeerById">
-    <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
-      <module name="mssc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BeerDtoKebabTest.testKebab">
     <configuration name="BeerControllerTest.updateBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
@@ -135,47 +119,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BreweryClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeerDtoKebabTest.testKebab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.BreweryClientTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.model" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.model.BeerDtoKebabTest" />
+      <option name="METHOD_NAME" value="testKebab" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeerDtoSnakeTest.testSnake" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.client.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.client" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.client.CustomerClientTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.model" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.model.BeerDtoSnakeTest" />
+      <option name="METHOD_NAME" value="testSnake" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsscApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeerDtoTest.testDeserializationDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.model" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.model.BeerDtoTest" />
+      <option name="METHOD_NAME" value="testDeserializationDto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerDtoTest.testSerializationDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mkpartner.mssc.web.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.model" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.model.BeerDtoTest" />
+      <option name="METHOD_NAME" value="testSerializationDto" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerDtoKebabTest.testKebab" />
+        <item itemvalue="JUnit.BeerDtoSnakeTest.testSnake" />
+        <item itemvalue="JUnit.BeerDtoTest.testDeserializationDto" />
+        <item itemvalue="JUnit.BeerDtoTest.testSerializationDto" />
         <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
-        <item itemvalue="JUnit.CustomerClientTest" />
-        <item itemvalue="Application.MsscApplication" />
-        <item itemvalue="JUnit.BreweryClientTest" />
-        <item itemvalue="JUnit.MsscApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +337,8 @@
     <MESSAGE value="adding customer service" />
     <MESSAGE value="fixing typo" />
     <MESSAGE value="adding http client customizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding http client customizer" />
+    <MESSAGE value="adding json test code." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding json test code." />
   </component>
   <component name="WindowStateProjectService">
     <state x="589" y="199" width="742" height="640" key="#Inspections" timestamp="1596925300701">
@@ -377,22 +381,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="341" key="GridCell.Tab.0.bottom" timestamp="1597271779186">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom" timestamp="1597704027035">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
-    <state width="1872" height="341" key="GridCell.Tab.0.center" timestamp="1597271779186">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027035" />
+    <state width="1872" height="341" key="GridCell.Tab.0.center" timestamp="1597704027035">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
-    <state width="1872" height="341" key="GridCell.Tab.0.left" timestamp="1597271779186">
+    <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027035" />
+    <state width="1872" height="341" key="GridCell.Tab.0.left" timestamp="1597704027034">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
-    <state width="1872" height="341" key="GridCell.Tab.0.right" timestamp="1597271779186">
+    <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027034" />
+    <state width="1872" height="341" key="GridCell.Tab.0.right" timestamp="1597704027035">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597271779186" />
+    <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027035" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -425,6 +429,10 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state width="1872" height="334" key="GridCell.Tab.2.right/0.0.1920.1031@0.0.1920.1031" timestamp="1594947550192" />
+    <state x="538" y="254" width="843" height="531" key="IDE.errors.dialog" timestamp="1597618993940">
+      <screen x="0" y="0" width="1920" height="1031" />
+    </state>
+    <state x="538" y="254" width="843" height="531" key="IDE.errors.dialog/0.0.1920.1031@0.0.1920.1031" timestamp="1597618993940" />
     <state x="493" y="176" width="934" height="687" key="Maven.ArtifactSearchDialog" timestamp="1596718373237">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -437,10 +445,14 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2/0.0.1920.1031@0.0.1920.1031" timestamp="1596924501888" />
-    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596923899355">
+    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597618076012">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596923899355" />
+    <state x="648" y="305" width="624" height="429" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1597618076012" />
+    <state x="644" y="271" width="632" height="496" key="refactoring.ChangeSignatureDialog" timestamp="1597618757885">
+      <screen x="0" y="0" width="1920" height="1031" />
+    </state>
+    <state x="644" y="271" width="632" height="496" key="refactoring.ChangeSignatureDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1597618757885" />
     <state x="623" y="228" key="search.everywhere.popup" timestamp="1594769656122">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
