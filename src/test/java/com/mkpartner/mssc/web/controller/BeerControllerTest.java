@@ -20,7 +20,6 @@ import org.springframework.restdocs.payload.FieldDescriptor;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.StringUtils;
 
-import javax.validation.ConstraintDeclarationException;
 import java.math.BigDecimal;
 import java.util.Optional;
 import java.util.UUID;
