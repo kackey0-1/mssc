@@ -1,4 +1,4 @@
-package com.mkpartner.mssc.web.controller;
+package com.mkpartner.mssc.web.handlers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

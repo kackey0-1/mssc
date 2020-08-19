@@ -14,7 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerPagedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerPagedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/handlers/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/BeerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/BeerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/MvcExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/handlers/MvcExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,24 +76,27 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.mkpartner.mssc.web.client" />
       <recent name="com.mkpartner.mssc.web.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mkpartner.mssc.services" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mkpartner.mssc.web" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mkpartner.mssc.services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerControllerTest">
+  <component name="RunManager" selected="Application.MsscApplication">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -106,7 +114,7 @@
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.handlers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,7 +129,7 @@
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.handlers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,7 +145,7 @@
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.handlers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,7 +161,7 @@
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
+          <option name="PATTERN" value="com.mkpartner.mssc.web.handlers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BeerControllerTest" />
         <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
         <item itemvalue="JUnit.BeerControllerTest.saveNewBeer" />
         <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
-        <item itemvalue="Application.MsscApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -362,10 +370,19 @@
     </state>
     <state x="583" y="317" width="754" height="405" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1597441404402" />
     <state x="437" y="276" width="592" height="324" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.823@0.23.1440.823" timestamp="1597615887643" />
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596718391408">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state x="576" y="201" width="322" height="473" key="#com.intellij.ide.util.MemberChooser" timestamp="1597874573634">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596718391408" />
+    <state x="576" y="201" width="322" height="473" key="#com.intellij.ide.util.MemberChooser/0.23.1440.823@0.23.1440.823" timestamp="1597874573634" />
+    <state x="316" y="366" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597874701776">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="316" y="366" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.823@0.23.1440.823" timestamp="1597874701776" />
+    <state x="506" y="323" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1597874705901">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="506" y="323" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1440.823@0.23.1440.823" timestamp="1597874705901" />
     <state x="693" y="266" width="534" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596718098425">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -374,42 +391,50 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom" timestamp="1597658596217">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1597877069467">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597877069467" />
     <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597658596217" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center" timestamp="1597658596216">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597876549810" />
+    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1597877069464">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597877069464" />
     <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1597658596216" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left" timestamp="1597658596215">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1597876549809" />
+    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1597877069460">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597877069460" />
     <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201016" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1597658596215" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right" timestamp="1597658596216">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1597876549808" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1597877069466">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597877069466" />
     <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1597658596216" />
-    <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1597355766234">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1597876549809" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1597877130923">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
-    <state width="1872" height="334" key="GridCell.Tab.1.center" timestamp="1597355766234">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597877130923" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1597877130921">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="334" key="GridCell.Tab.1.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
-    <state width="1872" height="334" key="GridCell.Tab.1.left" timestamp="1597355766234">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1597877130921" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1597877130920">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="334" key="GridCell.Tab.1.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
-    <state width="1872" height="334" key="GridCell.Tab.1.right" timestamp="1597355766234">
-      <screen x="0" y="0" width="1920" height="1031" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1597877130920" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1597877130922">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1872" height="334" key="GridCell.Tab.1.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1597877130922" />
     <state width="1872" height="334" key="GridCell.Tab.2.bottom" timestamp="1594947550192">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -438,11 +463,11 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="774" y="179" width="372" height="681" key="RollbackChangesDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1597355753523" />
-    <state x="149" y="124" width="927" height="722" key="SettingsEditor" timestamp="1597657192681">
+    <state x="149" y="124" width="927" height="722" key="SettingsEditor" timestamp="1597874933561">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="198" y="153" width="1235" height="733" key="SettingsEditor/0.0.1920.1031@0.0.1920.1031" timestamp="1596714649241" />
-    <state x="149" y="124" width="927" height="722" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1597657192681" />
+    <state x="149" y="124" width="927" height="722" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1597874933561" />
     <state x="555" y="254" width="810" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596751890208">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -457,6 +482,30 @@
     <state x="623" y="228" key="search.everywhere.popup/0.0.1920.1031@0.0.1920.1031" timestamp="1594769656122" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/BeerServiceImpl.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
