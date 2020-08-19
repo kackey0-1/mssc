@@ -1,8 +1,7 @@
 package com.mkpartner.mssc.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mkpartner.mssc.domain.Beer;
-import com.mkpartner.mssc.repositories.BeerRepository;
+import com.mkpartner.mssc.services.BeerService;
 import com.mkpartner.mssc.web.model.BeerDto;
 import com.mkpartner.mssc.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.BeforeEach;
@@ -47,7 +46,7 @@ class BeerControllerTest {
     ObjectMapper objectMapper;
 
     @MockBean
-    BeerRepository beerRepository;
+    BeerService beerService;
 
     ConstrainedFields fields;
 
@@ -59,7 +58,7 @@ class BeerControllerTest {
     @Test
     void getBeerById() throws Exception {
         //given -> ->then
-        given(beerRepository.findById(any())).willReturn(Optional.of(Beer.builder().build()));
+        given(beerService.getBeerById(any())).willReturn(getValidBeerDto());
         mockMvc.perform(get("/api/v1/beer/{beerId}", UUID.randomUUID().toString())
                 .param("isCold", "yes")
                 .accept(MediaType.APPLICATION_JSON))

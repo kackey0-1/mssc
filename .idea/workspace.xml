@@ -14,12 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/handlers/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/BeerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/BeerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/MvcExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/handlers/MvcExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/controller/BeerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsscApplication">
+  <component name="RunManager" selected="JUnit.BeerControllerTest">
     <configuration name="MsscApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.MsscApplication" />
       <module name="mssc" />
@@ -182,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BeerControllerTest" />
+        <item itemvalue="Application.MsscApplication" />
         <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
         <item itemvalue="JUnit.BeerControllerTest.saveNewBeer" />
         <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
@@ -391,50 +387,54 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1597877069467">
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1597877371903">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597877069467" />
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597877371903" />
     <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597876549810" />
-    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1597877069464">
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597877211829" />
+    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1597877371902">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597877069464" />
+    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597877371902" />
     <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1597876549809" />
-    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1597877069460">
+    <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1597877211826" />
+    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1597877371901">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597877069460" />
+    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597877371901" />
     <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201016" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1597876549808" />
-    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1597877069466">
+    <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1597877211825" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1597877371902">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597877069466" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597877371902" />
     <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597446201017" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1597876549809" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1597877130923">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1597877211828" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1597877371905">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597877371905" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597877130923" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1597877130921">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597877322623" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1597877371904">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1597877371904" />
     <state width="1872" height="334" key="GridCell.Tab.1.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1597877130921" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1597877130920">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1597877322621" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1597877371904">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1597877371904" />
     <state width="1872" height="334" key="GridCell.Tab.1.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1597877130920" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1597877130922">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1597877322620" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1597877371905">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1597877371905" />
     <state width="1872" height="334" key="GridCell.Tab.1.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597355766234" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1597877130922" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1597877322622" />
     <state width="1872" height="334" key="GridCell.Tab.2.bottom" timestamp="1594947550192">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -482,30 +482,6 @@
     <state x="623" y="228" key="search.everywhere.popup/0.0.1920.1031@0.0.1920.1031" timestamp="1594769656122" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/services/impl/BeerServiceImpl.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/controller/BeerController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
