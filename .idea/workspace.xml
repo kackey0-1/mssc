@@ -14,15 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe8295b4-fca5-413d-9df3-82f17cfcb868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoKebabTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoSnakeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-kebab.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-snake.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mssc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mssc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/LocalDateDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/LocalDateSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkpartner/mssc/web/model/BeerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mkpartner/mssc/web/model/BeerDtoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,23 +99,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerDtoKebabTest.testKebab">
-    <configuration name="BeerControllerTest.updateBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mssc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mkpartner.mssc.web.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.controller.BeerControllerTest" />
-      <option name="METHOD_NAME" value="updateBeerById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BeerDtoTest">
     <configuration name="BeerDtoKebabTest.testKebab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
@@ -151,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeerDtoTest.testDeserializationDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeerDtoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc" />
       <extension name="coverage">
         <pattern>
@@ -161,7 +142,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.model" />
       <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.model.BeerDtoTest" />
-      <option name="METHOD_NAME" value="testDeserializationDto" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerDtoTest.testDeserialize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mkpartner.mssc.web.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mkpartner.mssc.web.model" />
+      <option name="MAIN_CLASS_NAME" value="com.mkpartner.mssc.web.model.BeerDtoTest" />
+      <option name="METHOD_NAME" value="testDeserialize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerDtoTest" />
+        <item itemvalue="JUnit.BeerDtoTest.testDeserialize" />
+        <item itemvalue="JUnit.BeerDtoTest.testSerializationDto" />
         <item itemvalue="JUnit.BeerDtoKebabTest.testKebab" />
         <item itemvalue="JUnit.BeerDtoSnakeTest.testSnake" />
-        <item itemvalue="JUnit.BeerDtoTest.testDeserializationDto" />
-        <item itemvalue="JUnit.BeerDtoTest.testSerializationDto" />
-        <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596928454184</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding json test code.">
+      <created>1597704052001</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597704052001</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,10 +364,10 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="418" y="176" width="1106" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1031@0.0.1920.1031" timestamp="1596589525099" />
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1596925668839">
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1597705967424">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1596925668839" />
+    <state x="768" y="223" width="384" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1031@0.0.1920.1031" timestamp="1597705967424" />
     <state x="463" y="439" width="993" height="160" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596926327976">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
@@ -381,22 +384,22 @@
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
     <state x="721" y="276" key="FileChooserDialogImpl/0.0.1920.1031@0.0.1920.1031" timestamp="1594862290815" />
-    <state width="1872" height="341" key="GridCell.Tab.0.bottom" timestamp="1597704027035">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom" timestamp="1597706360991">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027035" />
-    <state width="1872" height="341" key="GridCell.Tab.0.center" timestamp="1597704027035">
+    <state width="1872" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1031@0.0.1920.1031" timestamp="1597706360991" />
+    <state width="1872" height="341" key="GridCell.Tab.0.center" timestamp="1597706360990">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027035" />
-    <state width="1872" height="341" key="GridCell.Tab.0.left" timestamp="1597704027034">
+    <state width="1872" height="341" key="GridCell.Tab.0.center/0.0.1920.1031@0.0.1920.1031" timestamp="1597706360990" />
+    <state width="1872" height="341" key="GridCell.Tab.0.left" timestamp="1597706360990">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027034" />
-    <state width="1872" height="341" key="GridCell.Tab.0.right" timestamp="1597704027035">
+    <state width="1872" height="341" key="GridCell.Tab.0.left/0.0.1920.1031@0.0.1920.1031" timestamp="1597706360990" />
+    <state width="1872" height="341" key="GridCell.Tab.0.right" timestamp="1597706360990">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
-    <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597704027035" />
+    <state width="1872" height="341" key="GridCell.Tab.0.right/0.0.1920.1031@0.0.1920.1031" timestamp="1597706360990" />
     <state width="1872" height="334" key="GridCell.Tab.1.bottom" timestamp="1595378669696">
       <screen x="0" y="0" width="1920" height="1031" />
     </state>
