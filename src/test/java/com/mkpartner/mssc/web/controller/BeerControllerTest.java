@@ -1,6 +1,7 @@
 package com.mkpartner.mssc.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mkpartner.mssc.bootstrap.BeerLoader;
 import com.mkpartner.mssc.services.BeerService;
 import com.mkpartner.mssc.web.model.BeerDto;
 import com.mkpartner.mssc.web.model.BeerStyleEnum;
@@ -84,6 +85,7 @@ class BeerControllerTest {
 
     @Test
     void saveNewBeer() throws Exception {
+        given(beerService.saveNewBeer(any())).willReturn(getValidBeerDto());
         BeerDto beerDto = getValidBeerDto();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
@@ -107,6 +109,7 @@ class BeerControllerTest {
 
     @Test
     void updateBeerById() throws Exception{
+        given(beerService.updateBeer(any(), any())).willReturn(getValidBeerDto());
         BeerDto beerDto = getValidBeerDto();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
@@ -135,7 +138,7 @@ class BeerControllerTest {
         return BeerDto.builder()
                 .beerName("Beer")
                 .beerStyle(BeerStyleEnum.PALE_ALE)
-                .upc(12345678912L)
+                .upc(BeerLoader.BEER_3_UPC)
                 .price(new BigDecimal("12"))
                 .quantityOnHand(20)
                 .build();
